@@ -1,0 +1,47 @@
+[
+  {
+    "package": "rSharp",
+    "url": "https://github.com/Open-Systems-Pharmacology/rSharp",
+    "branch": "*release"
+  },
+  {
+    "package": "ospsuite.utils",
+    "url": "https://github.com/Open-Systems-Pharmacology/OSPSuite.RUtils",
+    "branch": "*release"
+  },
+  {
+    "package": "tlf",
+    "url": "https://github.com/Open-Systems-Pharmacology/TLF-Library",
+    "branch": "*release"
+  },
+  {
+    "package": "ospsuite",
+    "url": "https://github.com/Open-Systems-Pharmacology/OSPSuite-R",
+    "branch": "*release"
+  },
+  {
+    "package": "ospsuite.plots",
+    "url": "https://github.com/Open-Systems-Pharmacology/OSPSuite.Plots",
+    "branch": "*release"
+  },
+  {
+    "package": "ospsuite.reportingengine",
+    "url": "https://github.com/Open-Systems-Pharmacology/OSPSuite.ReportingEngine",
+    "branch": "*release"
+  },
+  {
+    "package": "ospsuite.parameteridentification",
+    "url": "https://github.com/Open-Systems-Pharmacology/OSPSuite.ParameterIdentification",
+    "branch": "*release"
+  },
+  {
+    "package": "ospsuite.globalsensitivity",
+    "url": "https://github.com/Open-Systems-Pharmacology/OSPSuite.GlobalSensitivity",
+    "branch": "*release"
+  },
+  {
+    "package": "ospsuite.reportingframework",
+    "url": "https://github.com/Open-Systems-Pharmacology/OSPSuite.ReportingFramework",
+    "branch": "*release"
+  }
+]

@@ -57,10 +57,6 @@ pak::pak("ospsuite")
 
 Some OSP R packages were left out for now because they do not publish GitHub releases, so they cannot be tracked with `*release`: `ospsuite.addins`, `ospsuite.qualificationplaneditor`, and `ospsuite.VBEToolbox`. Give a package a release, then add it here.
 
-## Caveat: rSharp and the .NET runtime
-
-`rSharp` (and therefore everything that depends on it) needs a .NET runtime to load. R-universe's build environment does not provide one, so until `rSharp` can install and load without a runtime present, its build (and the builds of the packages that import it) will fail on R-universe. This is a property of the packages and the build environment, not of this registry.
-
 ## Maintaining the list
 
 - **Add a package**: append an object with its `package` name (the `Package:` field from the repository's `DESCRIPTION`) and its `url`. If the package does not cut GitHub releases, drop the `"branch"` field so R-universe builds its default branch instead of `*release`. If the app is installed with "only select repositories" scope, also grant it access to the new package repository.

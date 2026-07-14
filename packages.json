@@ -22,7 +22,7 @@
   {
     "package": "ospsuite.plots",
     "url": "https://github.com/Open-Systems-Pharmacology/OSPSuite.Plots",
-    "branch": "*release"
+    "branch": "main"
   },
   {
     "package": "ospsuite.reportingengine",

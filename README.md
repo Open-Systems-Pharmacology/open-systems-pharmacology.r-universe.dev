@@ -18,6 +18,17 @@ The OSP R packages (`rSharp`, `ospsuite`, and the rest) embed pre-compiled binar
 
 R-universe distributes the packages. It does not install the external .NET runtime; that remains a prerequisite on the user's machine, and on the R-universe build environment (see the caveat below).
 
+## Availability does not require passing `R CMD check`
+
+A package is **published and installable from this universe as soon as its source tarball builds** (`R CMD build` succeeds). Passing `R CMD check` is **not** required. R-universe is a publishing system, not a gatekeeper: it records each platform's check result (the `OK` / `NOTE` / `WARNING` / `ERROR` badges on the dashboard) for information, but a red check does **not** stop the binary from being built, stored, and served.
+
+This matters for the OSP packages because the R-universe build runners have **no .NET runtime** (and their Linux image ships a `libxml2` whose soname differs from the one the bundled native libraries were linked against). As a result:
+
+- The per-platform `R CMD check` jobs will typically show **ERROR** (tests, examples, and vignettes that call into .NET cannot run without the runtime). That is expected and does not block publishing.
+- What must succeed is `R CMD build`: the package has to install and load far enough to produce a tarball. For that, its `.onLoad()` must not fail when the runtime is absent. `rSharp` and `ospsuite` degrade gracefully in that case (they load, record why the runtime is unavailable, and raise an actionable error only when a .NET call is actually made), so their tarballs build and they are published.
+
+In short: **build green, check red, still installable.** A package only becomes unavailable if its `R CMD build` fails outright, or if one of its declared dependencies is not resolvable in the universe at a compatible version.
+
 ## Installing from this universe
 
 Once the universe is live, users install with plain `install.packages()`:

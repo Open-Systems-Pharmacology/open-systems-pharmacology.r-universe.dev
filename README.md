@@ -1,16 +1,6 @@
 # Open Systems Pharmacology R-universe
 
-This repository is the **R-universe registry** for the Open Systems Pharmacology R packages. It is not an R package itself; its only job is to hold `packages.json`, the list of package repositories that [R-universe](https://r-universe.dev) builds and publishes.
-
-Once this repository lives in the `Open-Systems-Pharmacology` GitHub organization and the R-universe GitHub App is enabled, R-universe builds every listed package from source on Windows, macOS, and Linux and serves the resulting binaries from:
-
-```
-https://open-systems-pharmacology.r-universe.dev
-```
-
-## Repository naming
-
-R-universe discovers a registry only when the repository is named `<organization>.r-universe.dev`. **This repository must be named `open-systems-pharmacology.r-universe.dev`** in the organization (all lowercase). The older `universe` name is deprecated and is no longer picked up for a new registry.
+This repository is the **R-universe registry** for the Open Systems Pharmacology R packages. It is not an R package itself; its only job is to hold `packages.json`, the list of package repositories that [R-universe](https://r-universe.dev) builds and publishes to https://open-systems-pharmacology.r-universe.dev
 
 ## Why R-universe
 

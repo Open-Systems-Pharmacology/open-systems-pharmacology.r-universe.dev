@@ -17,12 +17,12 @@
   {
     "package": "ospsuite",
     "url": "https://github.com/Open-Systems-Pharmacology/OSPSuite-R",
-    "branch": "graceful-load-no-runtime"
+    "branch": "main"
   },
   {
     "package": "ospsuite.plots",
     "url": "https://github.com/Open-Systems-Pharmacology/OSPSuite.Plots",
-    "branch": "main"
+    "branch": "*release"
   },
   {
     "package": "ospsuite.reportingengine",

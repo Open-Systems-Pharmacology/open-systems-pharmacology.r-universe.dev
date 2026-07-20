@@ -17,7 +17,7 @@
   {
     "package": "ospsuite",
     "url": "https://github.com/Open-Systems-Pharmacology/OSPSuite-R",
-    "branch": "main"
+    "branch": "*release"
   },
   {
     "package": "ospsuite.plots",

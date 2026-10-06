@@ -1,9 +1,5 @@
 [
-  {
-    "package": "rSharp",
-    "url": "https://github.com/Open-Systems-Pharmacology/rSharp",
-    "branch": "*release"
-  },
+{ "package": "rSharp", "url": "https://github.com/Open-Systems-Pharmacology/rSharp", "branch": "1.2.x" },
   {
     "package": "ospsuite.utils",
     "url": "https://github.com/Open-Systems-Pharmacology/OSPSuite.RUtils",
